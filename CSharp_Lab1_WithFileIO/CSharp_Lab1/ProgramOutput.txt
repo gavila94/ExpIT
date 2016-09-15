@@ -1,0 +1,6 @@
+Welcome to Grand Circus’ Room Detail Generator!
+
+Enter Length: {user input here, for example: 24.5}
+Enter Width: {user input here, for example: 20}
+Area: 162
+Perimeter :66
