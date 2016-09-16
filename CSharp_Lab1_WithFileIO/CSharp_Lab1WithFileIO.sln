@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Lab1", "CSharp_Lab1\CSharp_Lab1.csproj", "{FD443827-74A8-420C-970F-00E8161CCD70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Lab1_withFileIO", "CSharp_Lab1\CSharp_Lab1_withFileIO.csproj", "{FD443827-74A8-420C-970F-00E8161CCD70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

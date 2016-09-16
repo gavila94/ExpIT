@@ -9,21 +9,23 @@ namespace CSharp_Lab1
         {
 
             //reading from a file
-            string filePath = @"C:\GrandCircusMaterials\C#Bootcamp\C_Sharp_Labs\CSharp_Lab1\CSharp_Lab1\ProgramData.txt";
-            filePath = "C:\\GrandCircusMaterials\\C#Bootcamp\\C_Sharp_Labs\\CSharp_Lab1\\CSharp_Lab1\\ProgramData.txt";
+            string path = @"C:\GrandCircusMaterials\C#Bootcamp\ExpIT_dotNETBootcamp\CSharp_Lab1_WithFileIO\CSharp_Lab1\";
+            //path = "C:\\GrandCircusMaterials\\C#Bootcamp\\C_Sharp_Labs\\CSharp_Lab1\\CSharp_Lab1\\ProgramData.txt";
 
+            string filePath = path+"ProgramData.txt";
+           
             string[] fileContents = System.IO.File.ReadAllLines(filePath);
             int fileContentsLine = 0;
 
             //file program report
+            string fileOutputPath = path+"ProgramOutput.txt";
             List<string> exampleOutput = new List<string>();
 
-            string fileOutputPath = @"C:\GrandCircusMaterials\C#Bootcamp\C_Sharp_Labs\CSharp_Lab1\CSharp_Lab1\ProgramOutput.txt";
-
             //start of program
-            // Console.WriteLine("Welcome to Grand Circus’ Room Detail Generator!");
-            //'Console.WriteLine();
-            exampleOutput.Add("Welcome to Grand Circus’ Room Detail Generator!");
+            string headerLine = "Welcome to Grand Circus’ Room Detail Generator!";
+            // Console.WriteLine(headerLine);
+            //Console.WriteLine();
+            exampleOutput.Add(headerLine);
             exampleOutput.Add("");
 
             //loop
@@ -31,15 +33,19 @@ namespace CSharp_Lab1
             do
             {
                 //input for length
-                exampleOutput.Add("Enter Length: {user input here, for example: 24.5}");
-                Console.WriteLine("Enter Length: {user input here, for example: 24.5}");
+                string enterLengthLine  = "Enter Length: {user input here, for example: 24.5}";
+                exampleOutput.Add(enterLengthLine);
+                //Console.WriteLine(enterTextLine);
+
                 //string inputLength = Console.ReadLine();
                 string inputLength = fileContents[fileContentsLine];
                 fileContentsLine++;
 
                 //input for width
-                exampleOutput.Add("Enter Width: {user input here, for example: 20}");
-                Console.WriteLine("Enter Width: {user input here, for example: 20}");
+                string enterWidthLine = "Enter Width: {user input here, for example: 20}";
+                exampleOutput.Add(enterWidthLine);
+                Console.WriteLine(enterWidthLine);
+
                 string inputWidth = fileContents[fileContentsLine];
                 fileContentsLine++;
 
@@ -53,10 +59,14 @@ namespace CSharp_Lab1
                 decimal perimeter = 2 * (length + width);
 
                 //write results to console
-                exampleOutput.Add("Area: " + area);
-                exampleOutput.Add("Perimeter :" + perimeter);
-                Console.WriteLine("Area: " + area);
-                Console.WriteLine("Perimeter :" + perimeter);
+                string areaLine = "Area: " + area;
+                string permiterLine = "Perimeter :" + perimeter;
+
+                exampleOutput.Add(areaLine);
+                exampleOutput.Add(permiterLine);
+
+                Console.WriteLine(areaLine);
+                Console.WriteLine(permiterLine);
 
                 //continue question 
                 Console.WriteLine("Continue? (y/n):");
