@@ -10,4 +10,3 @@ Latte;Drinks; Carmel, Vanilla, or Pumpkin Spice;2.99;
 Hot Chocolate;Drinks; White or dark chocolate;2.50;
 Donut;Sweets;Variety of options;0.99;
 Coffee Cake;Sweets;Swirled with sweet cinnamon and topped with streusel;3.50;
-burger;foods;asdf;10;
