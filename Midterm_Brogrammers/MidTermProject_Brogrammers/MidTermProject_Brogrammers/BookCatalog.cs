@@ -72,7 +72,7 @@ namespace MidTermProject_Brogrammers
             for (int i = 0; i < objBook.Length; i++)
             {
                 objBook[i] = new BookCatalog();
-                objBook[i].BookNumberInCatalog = Convert.ToInt16(reader.ReadLine());
+                //objBook[i].BookNumberInCatalog = Convert.ToInt16(reader.ReadLine());
                 objBook[i].Title = reader.ReadLine();
                 objBook[i].Author = reader.ReadLine();
                 objBook[i].Status = reader.ReadLine();
@@ -99,8 +99,9 @@ namespace MidTermProject_Brogrammers
         //RETURN BOOKS
         public static void ReturnBook(ref BookCatalog[] objBooks)
         {
-            StreamWriter write = new StreamWriter("Books.txt"); // Allows you to write over
-            write.WriteLine(objBooks.Length + 1); // Allows to write a new book to text file
+           // StreamWriter write = new StreamWriter("Books.txt"); // Allows you to write over
+  
+            //writ(objBooks.Length + 1); // Allows to write a new book to text file
 
             Console.WriteLine("Thank you for choosing the Brogrammer's Library. To return your book press any key...");
             Console.ReadKey();
@@ -113,29 +114,33 @@ namespace MidTermProject_Brogrammers
             Console.WriteLine("Enter Author: ");
             temp.Author = Console.ReadLine(); // takes user input and store it in the variable
 
-            Console.WriteLine("Enter Book Number: ");
-            temp.BookNumberInCatalog = Convert.ToInt32(Console.ReadLine()); // takes user input and store it in the variable
+            //Console.WriteLine("Enter Book Number: ");
+            //temp.BookNumberInCatalog = Convert.ToInt32(Console.ReadLine()); // takes user input and store it in the variable
 
             Console.WriteLine("Enter Status: ");
             temp.Status = Console.ReadLine(); // takes user input and store it in the variable
 
             //write new data to text file
-            write.WriteLine(temp.Title);
-            write.WriteLine(temp.Author);
-            write.WriteLine(temp.BookNumberInCatalog);
-            write.WriteLine(temp.Status);
+           
+            System.IO.File.WriteAllText(@"C:\Users\Student\Documents\Visual Studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers/Books.txt", temp.Title);
+            System.IO.File.WriteAllText(@"C:\Users\Student\Documents\Visual Studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers/Books.txt", temp.Author);
+            System.IO.File.WriteAllText(@"C:\Users\Student\Documents\Visual Studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers/Books.txt", temp.Status);
+            // write.WriteLine(temp.Title);
+            //write.WriteLine(temp.Author);
+            //write.WriteLine(temp.BookNumberInCatalog);
+            //write.WriteLine(temp.Status);
 
-            //put old Books back in the text file
-            for (int i = 0; i < objBooks.Length; i++)
-            {
-                write.WriteLine(objBooks[i].Title);
-                write.WriteLine(objBooks[i].Author);
-                write.WriteLine(objBooks[i].BookNumberInCatalog);
-                write.WriteLine(objBooks[i].Status);
+            ////put old Books back in the text file
+            //for (int i = 0; i < objBooks.Length; i++)
+            //{
+            //    write.WriteLine(objBooks[i].Title);
+            //    write.WriteLine(objBooks[i].Author);
+            //    write.WriteLine(objBooks[i].BookNumberInCatalog);
+            //    write.WriteLine(objBooks[i].Status);
 
-            }
-
-            write.Close(); // close the file after the write
+            //}
+            //write.Flush();
+            //write.Close(); // close the file after the write
 
             LoadData(ref objBooks); // updates the array
         }
