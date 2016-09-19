@@ -1,0 +1,14 @@
+﻿"1","Plastic Never Was so Sexy Frame","frame"       ,"This affordable plastic frame will suit your everyday needs while setting the lasted fashion trends"                                     ,50
+"2","Metal Rockstar Frame"           ,"frame"       ,"you can rely on Our metal to hold strong through your daily grind and have you feeling like a rockstar"                                  ,80
+"3","Gimme Half Frame"               ,"frame"       ,"This UBER sleek design is half the Metal Rockstar Frame with a floating lens and will take your fashion sense on its wildest ride yet"   ,100
+"4","Monocle Frame"                  ,"frame"       ,"Purchase with a monocle lens and represent 19th centruy style . Chain included"                                                          ,80
+"5","Classic plastic Shamstic Lens"  ,"lens"        ,"Nothing fancy shamncy: a basic plastic lens"                                                                                             ,30
+"6","Amti-Scratch Coating"           ,"lens"        ,"Add this top of the line anti scratch coating to any lens for maximum portection"                                                        ,25
+"7","Bye Bye Blurry Bifocal Lens"    ,"lens"        ,"Perfect for those unfortnuate souls who have to now pay a premium to see clear. We are sorry for your loss"                              ,50
+"8","Classic plastic Shamstic Lens"  ,"lens"        ,"Climate Change is amoungst us. Protect your corea with still with uv Lenses on any lens"                                                 ,15
+"9","Amti-Glare Coating"             ,"lens"        ,"No description"                                                                                                                          ,25
+"10","Monocle Lense"                 ,"lens"        ,"Purchase with a monocle frame and represent 19th centruy style"                                                                          ,80
+"11","contact lens Pair"             ,"lens"        ,"one box will provide 10 pairs of contact lenses"                                                                                         ,60
+"12","Sun Glasses"                   ,"lens"        ,"shade never looked so cool. pair with any frame"                                                                                         ,50
+"13","Not your average Cleaner"      ,"accessory"   , "Clean your glasses with a Zero Carbon Footprint with our Eco Friendly Cleaner"                                                          ,15
+"14","Not your average Case"         ,"accessory"   ,"Protect your Monocle Frames with style with our top of the line case "                                                                   ,10
