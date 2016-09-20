@@ -204,7 +204,7 @@ namespace MonocleFile
                         monocleDisplay.PrintReceipt(monocleDisplay, selectedItems, subTotal, salesTax, grandTotal);//Call to Receipt method to display
                         Console.WriteLine("Payment Type is Creditcard");
                         receiptList.Add(new Receipt(selectedItems, subTotal, salesTax, grandTotal, 0, 0, "Creditcard Pyment"));
-                        Console.ReadLine();
+                        
                         break;
 
                     case 3:
