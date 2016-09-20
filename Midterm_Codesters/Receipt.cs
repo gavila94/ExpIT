@@ -22,7 +22,7 @@ namespace point_of_sale_midterm
 
             Console.WriteLine("Thank you!\n");
                         
-            Console.WriteLine("Here's a Copy of Your receipt:\n");
+            Console.WriteLine("Here's a Copy of Your Receipt:\n");
 
             Console.WriteLine("=====================");
             Console.WriteLine("Codester Coffee Shop");
