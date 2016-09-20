@@ -19,11 +19,11 @@ namespace LibraryTerminal
                 {
                                 
 
-                    if (value.availability == "yes")
+                    if (value.availability == "Available")
                     {
                         Admin.CheckOutList.Add(value);
                         Console.WriteLine("Book {0} added to the cart", value.title);
-                        value.availability = "No";
+                        value.availability = "Unavailable";
                     }
                     else
                         Console.WriteLine("Book is not available");
@@ -52,9 +52,7 @@ namespace LibraryTerminal
             else
                 Console.WriteLine("No books to check-out");
         }
-
-
-        
+                
         public void submitBook(string takenBook)
         {
             foreach (Books item in Admin.listOfBooks)
@@ -64,14 +62,13 @@ namespace LibraryTerminal
                     item.availability = "yes";
                 }
           }
-
      }
         
 
         public void displayBooks()
         {
             foreach (Books book in Admin.listOfBooks.OrderBy(m => m.title))
-                Console.WriteLine("Book Index: " + book.BookNumber + "\t Book Title:" + book.title);
+                Console.WriteLine( book.BookNumber + "\t Book Title:" + book.title);
         }
         public void displayCategories()
         {
@@ -82,7 +79,6 @@ namespace LibraryTerminal
         {
             foreach (string value in Admin.authorList)
                 Console.WriteLine(value);
-
         }
     }
 }

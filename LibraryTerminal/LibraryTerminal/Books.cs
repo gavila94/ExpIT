@@ -10,14 +10,14 @@ namespace LibraryTerminal
     {
       public  string title;
       public string author;
-     public int copies;
+     public string copies;
       public  string category;
       public string availability;
        public string BookNumber;
         
     
 
-        public Books(string Index, string title, string author,int copies , string category, string availability)
+        public Books(string Index, string title, string author,string copies , string category, string availability)
         {
             this.title = title;
             this.author = author;

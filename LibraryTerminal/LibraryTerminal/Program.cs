@@ -13,13 +13,14 @@ namespace LibraryTerminal
         {
             Library library = new Library();
             Admin admin = new Admin();
-            Admin.library = library;
+            //Admin.library = library;
 
             string name = " ";
             string userResponse = "";
             string chosenBook;
             string Responce = "";
 
+            //Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Welcome to Grand Circus Online Library!");
 
             Console.WriteLine("Please Enter Your Name:");
@@ -36,7 +37,7 @@ namespace LibraryTerminal
             if (choice == 1)
             {
                 library.displayBooks();
-                Console.WriteLine("Please enter a book name to add to the cart");
+                Console.WriteLine("Please enter a book number to add to the cart");
                 string selectedBook = Console.ReadLine();
 
                 library.takeBook(selectedBook);
@@ -67,9 +68,14 @@ namespace LibraryTerminal
                     case "1":
                     case "CATEGORY":
                         Console.WriteLine("The available categories are:");
+                        Console.WriteLine("=======================================");
+                        //Console.ForegroundColor = ConsoleColor.DarkGreen;
                         library.displayCategories();
+                        Console.WriteLine("=======================================");
+                        //Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine();
 
-                        Console.WriteLine("Please select One Category");
+                        Console.Write("Please select One Category: \t");
 
                         string selectedCategory = Console.ReadLine();
 
@@ -94,7 +100,9 @@ namespace LibraryTerminal
                             goto start;
                         else
                         {
+                            Console.WriteLine("=======================================");
                             library.displayCheckout(name, accountNumber);
+                            Console.WriteLine("=======================================");
                             Console.WriteLine("Thank You");
                         }
 
@@ -108,7 +116,9 @@ namespace LibraryTerminal
                         if (yes == "y")
                         {
                             Console.WriteLine("The available authorList:");
+                            Console.WriteLine("=======================================");
                             library.displayAuthorList();
+                            Console.WriteLine("=======================================");
                             Console.WriteLine("Please enter the Author Name");
                         }
                         else
@@ -133,7 +143,11 @@ namespace LibraryTerminal
                         if (checkAnotherBook == "y")
                             goto AuthorName;
                         else
+                        {
+                            Console.WriteLine("=======================================");
                             library.displayCheckout(name, accountNumber);
+                            Console.WriteLine("=======================================");
+                        }
 
                         break;
 
@@ -151,7 +165,7 @@ namespace LibraryTerminal
 
                                 if (book.title == userSelectedBook)
 
-                                    Console.WriteLine("Title/t:" + book.BookNumber + "/t" + book.title + "\t" + book.availability);
+                                    Console.WriteLine("Title:\t" + book.BookNumber + "\t" + book.title + "\t" + book.availability);
 
                             }
                             Console.WriteLine("Choose a book to add to cart");
@@ -169,7 +183,11 @@ namespace LibraryTerminal
                             goto title;
                         }
                         else
+                        {
+                            Console.WriteLine("=======================================");
                             library.displayCheckout(name, accountNumber);
+                            Console.WriteLine("=======================================");
+                        }
 
                         break;
 

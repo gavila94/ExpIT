@@ -4,3 +4,9 @@ c:\users\madhusudan\documents\visual studio 2015\Projects\LibraryTerminal\Librar
 c:\users\madhusudan\documents\visual studio 2015\Projects\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.exe
 c:\users\madhusudan\documents\visual studio 2015\Projects\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.pdb
 C:\Users\madhusudan\Documents\Visual Studio 2015\Projects\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\ExpIT_dotNETBootcamp\LibraryTerminal\LibraryTerminal\bin\Debug\LibraryTerminal.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\ExpIT_dotNETBootcamp\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\ExpIT_dotNETBootcamp\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\ExpIT_dotNETBootcamp\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\ExpIT_dotNETBootcamp\LibraryTerminal\LibraryTerminal\bin\Debug\LibraryTerminal.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\ExpIT_dotNETBootcamp\LibraryTerminal\LibraryTerminal\bin\Debug\LibraryTerminal.pdb
