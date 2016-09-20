@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 namespace MonocleFile
 {
 
+
+
+
+
     public class Display
     {
 
@@ -84,7 +88,7 @@ namespace MonocleFile
         //To display the receipt to console 
         public void PrintReceipt(Display objectNew, List<Products> selectedItems, int subTotal, double salesTax, double Total)
         {
-            Console.Write("\n\n                                    Receipt                                                          \n \n  ");
+            Console.Write("\n\n                                      Receipt -Customer copy                                                         \n \n  ");
             objectNew.DisplaySelectedItems(selectedItems);
             Console.WriteLine("\n*****************************************************************************");
             Console.WriteLine($"\n\nSubTotal                                                                 ${subTotal}");
@@ -94,41 +98,43 @@ namespace MonocleFile
 
         }
 
-       
 
-        public void DisplayReceiptList(List<Receipt> receiptList)
+
+        public void DisplayReceiptList(List<Receipt> receiptList, int counter)
         {
             List<Products> selectedList;
            
-            for (int i = 0; i < receiptList.Count; i++)
+             for (int i =0; i < receiptList.Count; i++)
             {
-               
-               int subTotal1= receiptList[i].GetsubTotal();
-               double salesTax1=  receiptList[i].GetSalesTax();
-               double grandTotal1=  receiptList[i].GetGrandTotal();
-               selectedList = receiptList[i].GetSelectedItems();
+
+                int subTotal1 = receiptList[i].GetsubTotal();
+                double salesTax1 = receiptList[i].GetSalesTax();
+                double grandTotal1 = receiptList[i].GetGrandTotal();
+                selectedList = receiptList[i].GetSelectedItems();
+                Console.WriteLine(" \n                               Receipt- Store copy                            ");
                 Console.WriteLine("\n\n*****************************************************************************");
                 for (int j = 0; j < selectedList.Count; j++)
                 {
-                    
-               
-                Console.WriteLine($"\n {j+1}        {selectedList[j].GetName()}                               ${selectedList[j].GetPrice()}\n");
+
+
+                    Console.WriteLine($"\n {j + 1}        {selectedList[j].GetName()}                               ${selectedList[j].GetPrice()}\n");
 
                 }
-                Console.WriteLine("\n\n*****************************************************************************");  
+                Console.WriteLine("\n\n*****************************************************************************");
                 Console.WriteLine($"SubTotal                                                              ${subTotal1}");
                 Console.WriteLine($"SalesTax                                                              ${salesTax1}");
-                Console.WriteLine($"Grand Total                                                           ${grandTotal1}");     
-                Console.WriteLine($" \n\nPayment Type       {receiptList[i].GetpaymentType()}");
+                Console.WriteLine($"Grand Total                                                           ${grandTotal1}");
+                Console.WriteLine($" \n\nPayment Type       {receiptList[counter].GetpaymentType()}");
                 Console.WriteLine("************************************************************************************");
 
-            };
+            }
+        }
 
             }
 
 
 
         }
-    }
+    
 
 
