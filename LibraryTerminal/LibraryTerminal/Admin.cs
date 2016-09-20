@@ -12,7 +12,7 @@ namespace LibraryTerminal
  public static List<Books> listOfBooks = new List<Books> {
 new Books ("01","Microsoft Visual C# Step by Step","John Sharp","5", "Reference", "Available"),
 new Books ("02","The Great Gatsby", "F. Scott Fitzgerald","5", "Fiction", "Available"),
-new Books ("03","The Grapes of Wrath", " John Steinbeck","3", "Fiction", "Available"),
+new Books ("03","The Grapes of Wrath", "John Steinbeck","3", "Fiction", "Available"),
 new Books ("04","Java: A Beginner's Guide", "Herbert Schildt","2", "Reference", "Available"),
 new Books ("05","Milk and Honey", "Rupi Kaur","3","Fiction", "Available"),
 new Books ("06","The 5 Love Languages: The Secret to Love That Lasts", "Gary Chapman","3", "Self-Help", "Available"),
