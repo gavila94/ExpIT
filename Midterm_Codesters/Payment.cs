@@ -65,7 +65,6 @@ namespace point_of_sale_midterm
                         break;
 
                     case "check":
-
                         string strRountingNum, strAccountNum;
                         do
                         {
