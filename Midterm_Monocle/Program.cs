@@ -44,11 +44,11 @@ namespace MonocleFile
 
             }
             List<Products> selectedItems = new List<Products>();
-            Display monocleDisplay = new Display();
+           
             //New purchase starts here
             
             do
-            {
+            { Display monocleDisplay = new Display();
 
                 do  //Additional Purchase starts here
                 {
