@@ -175,7 +175,7 @@ namespace point_of_sale_midterm
 
                             if ((year + 2000)<now.Year)
                             {
-                                Console.Write("Invalid year");
+                                Console.Write("Invalid year. ");
                                 //Set invalid date
                                 dateIsValid = false;
                             }
@@ -185,7 +185,7 @@ namespace point_of_sale_midterm
                                 {
                                     if (month < now.Month)
                                     {
-                                        Console.Write("Invalid month");
+                                        Console.Write("Invalid month. ");
                                         //Set invalid date
                                         dateIsValid = false;
                                     }
