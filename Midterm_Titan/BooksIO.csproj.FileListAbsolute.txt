@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\mmmdvmknvkdsnvkdsnvvsd\Midterm\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\Administrator\Desktop\mmmdvmknvkdsnvkdsnvvsd\Midterm\Midterm\bin\Debug\BookTextfile.txt
+C:\Users\Administrator\Desktop\mmmdvmknvkdsnvkdsnvvsd\Midterm\Midterm\bin\Debug\Midterm.exe
+C:\Users\Administrator\Desktop\mmmdvmknvkdsnvkdsnvvsd\Midterm\Midterm\bin\Debug\Midterm.pdb
+C:\Users\Administrator\Desktop\mmmdvmknvkdsnvkdsnvvsd\Midterm\Midterm\obj\Debug\BooksIO.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\mmmdvmknvkdsnvkdsnvvsd\Midterm\Midterm\obj\Debug\Midterm.exe
+C:\Users\Administrator\Desktop\mmmdvmknvkdsnvkdsnvvsd\Midterm\Midterm\obj\Debug\Midterm.pdb
+C:\Users\Administrator\Desktop\riddhi\Midterm\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\Administrator\Desktop\riddhi\Midterm\Midterm\obj\Debug\Midterm.exe
+C:\Users\Administrator\Desktop\riddhi\Midterm\Midterm\obj\Debug\Midterm.pdb
+C:\Users\Administrator\Desktop\riddhi\Midterm\Midterm\bin\Debug\Midterm.exe
+C:\Users\Administrator\Desktop\riddhi\Midterm\Midterm\bin\Debug\Midterm.pdb
+C:\Users\Administrator\Desktop\riddhi\Midterm\Midterm\obj\Debug\BooksIO.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\riddhi\Team Titan MidTerm - finished\Midterm\Midterm\bin\Debug\Midterm.exe.config
+C:\Users\Administrator\Desktop\riddhi\Team Titan MidTerm - finished\Midterm\Midterm\obj\Debug\Midterm.exe
+C:\Users\Administrator\Desktop\riddhi\Team Titan MidTerm - finished\Midterm\Midterm\obj\Debug\Midterm.pdb
