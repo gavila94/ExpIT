@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,6 @@ namespace point_of_sale_midterm
     {
         public static void printReceipt(List<cartItem> shoppingList, Payment pay)
         {
-            //int quantity = 1; string itemName = "Coffee"; double itemPrice = 2;
             double total = 0;
             const double TAX_RATE = 0.06;
 
@@ -30,31 +29,25 @@ namespace point_of_sale_midterm
             Console.WriteLine("=====================");
             foreach (cartItem product in shoppingList)
             {
-                //Console.WriteLine(quantity + "x " + itemName + "        " + "$" + itemPrice);
                 Console.WriteLine(product.Quantity.ToString() + "x " + product.Item.Name + "\t\t\t" + product.Item.Price.ToString("C2"));
             }
             
             Console.WriteLine("\nSubtotal: " + total.ToString("C2"));
             Console.WriteLine("Total Tax: " + (total * 0.06).ToString("C2"));
             Console.WriteLine("Grand Total: " + grandTotal.ToString("C2"));
-
-         //   foreach (Payment payMethod in total)
-          //  { }
-          //      Console.WriteLine("Cash:" +Payment.paymentMethod);
-          //  Console.WriteLine(change + "Change");
-//
-       //     Console.WriteLine(cardtype xxxxxxxxxxxx3253);
            
-            Console.WriteLine("\nYou paid with " + pay.paymentType);
-            if (pay.paymentType == "credit")
+            Console.Write("\nYou paid with " + pay.paymentType);
+            if (pay.paymentType.ToLower() == "credit")
             {
                 string[] carNumArr = pay.cardNumber.Split(' ');
-                Console.Write("XXXX-XXXX-XXXX-" + carNumArr[3]);
+                Console.Write(" XXXX-XXXX-XXXX-" + carNumArr[3]+"\n");
             }
-
-            //Console.Read();
+            
+            if (pay.paymentType.ToLower() == "cash")
+            {
+                Console.WriteLine(" $" + pay.cashReceived.ToString());
+                Console.WriteLine("Change: " + (pay.cashReceived-grandTotal).ToString("C2"));
+            }
         }
-
     }
 }
-
