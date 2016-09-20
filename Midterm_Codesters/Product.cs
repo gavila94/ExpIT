@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,15 +13,7 @@ namespace point_of_sale_midterm
         private string _description;
         private double _price;
         private int _prodNum;
-
-        /*public Product(string name, string category, string description, double price)
-        {
-            _name = name;
-            _category = category;
-            _description = description;
-            _price = price;
-        }*/
-
+               
         public string Name
         {
             get { return _name; }
