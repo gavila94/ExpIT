@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +31,7 @@ namespace MonocleFile
             int cvvNumberint = 0;
             long routingNumberLong = 0;
             int expirationDate = 0;
+            int receiptCounter = 0;
 
             string fileRead = @"C:\\Users\\ATHIKUMAR\\Documents\\GitHub\\EXPIT\\DEMOS\\MonocleFile\\MonocleFile\\input.txt";//Read fro the file
             string[] fileContents = System.IO.File.ReadAllLines(fileRead);
@@ -95,13 +96,22 @@ namespace MonocleFile
                 grandTotal = monocleDisplay.calculateTotal(subTotal, salesTax);
                 Console.WriteLine($"SubTotalAmount=${subTotal}  \nSales Tax =${salesTax}  \nGrandTotal=${grandTotal}");
                 Console.WriteLine("\n\nChoose your Method of Payment would you like?  1- Cash, 2- Credit Card, 3 - Check\n");
-                paymentOption = int.Parse(Console.ReadLine());
+                try
+                {
+                    paymentOption = int.Parse(Console.ReadLine());
+                }
+                catch(FormatException fx)
+                {
+                    Console.WriteLine(fx.Message.ToString());
+                    Console.WriteLine("Please enter number only ");
+                    paymentOption = int.Parse(Console.ReadLine());
+                }
                 while (paymentOption <= 0 || paymentOption > 3)
                 {
                     Console.WriteLine("Error: Invalid Entry");
-                    Console.WriteLine("Please Select your Method of Payment \n");
+                    Console.WriteLine("Please Select your Method of Payment .Enter numbers between 1 And 3 \n");                 
                     paymentOption = int.Parse(Console.ReadLine());
-
+                                   
                 }
 
                 switch (paymentOption)//payment option checking 
@@ -121,7 +131,8 @@ namespace MonocleFile
                         }
                         balanceAmount = cashAmount - grandTotal;                                         
                         receiptList.Add(new Receipt(selectedItems, subTotal, salesTax, grandTotal, cashAmount, balanceAmount, "Cash Payment"));//Add to receipt list
-                        monocleDisplay.PrintReceipt(monocleDisplay, selectedItems, subTotal, salesTax, grandTotal);//Display receipt
+                        monocleDisplay.PrintReceipt(monocleDisplay, selectedItems, subTotal, salesTax, grandTotal);//Display receiptco
+                        Console.WriteLine(" \n    Payment Type: Cash     ");
                         Console.WriteLine($"\nYour balance Amount is  is   ${ balanceAmount}\n\n");               
                         break;
 
@@ -156,8 +167,8 @@ namespace MonocleFile
                        
                                           
                         Console.WriteLine("Enter Expiration Date");
-                        
-                            try
+                         //year format (Digit only)validation
+                            try                      
                         { 
                            expirationDate = int.Parse(Console.ReadLine());
                         }
@@ -168,7 +179,7 @@ namespace MonocleFile
 
                             expirationDate = int.Parse(Console.ReadLine());
                         }
-                        while(expirationDate<2016)
+                        while(expirationDate<2016)    //year validation
                         {
                             Console.WriteLine("Enter valid year");
                             expirationDate = int.Parse(Console.ReadLine());
@@ -191,6 +202,7 @@ namespace MonocleFile
                             cvvNumberint= int.Parse(Console.ReadLine());
                         }
                         monocleDisplay.PrintReceipt(monocleDisplay, selectedItems, subTotal, salesTax, grandTotal);//Call to Receipt method to display
+                        Console.WriteLine("Payment Type is Creditcard");
                         receiptList.Add(new Receipt(selectedItems, subTotal, salesTax, grandTotal, 0, 0, "Creditcard Pyment"));
                         Console.ReadLine();
                         break;
@@ -216,6 +228,7 @@ namespace MonocleFile
                           routingNumberLong=long.Parse(Console.ReadLine());
                         }
                         monocleDisplay.PrintReceipt(monocleDisplay, selectedItems, subTotal, salesTax, grandTotal);
+
                         receiptList.Add(new Receipt(selectedItems, subTotal, salesTax, grandTotal, 0, 0, "Check  Payment"));
                         break;
                     default:
@@ -224,11 +237,12 @@ namespace MonocleFile
 
                         break;
                 }
-             
-               // monocleDisplay.DisplayReceiptList(receiptList);// To print the Receipt List
+
+                monocleDisplay.DisplayReceiptList(receiptList,receiptCounter);// To print the Receipt List
                 Console.WriteLine(" Thank you for shopping with us. Please come back to visit [Monocle] Store again.");
                 Console.WriteLine("\n Cant get enough? Enter \"back\" to return to [Monocle] Store:\n");
                 continueToShop = Console.ReadLine().ToLower();
+               
                 receiptList.Clear();
 
             } while (continueToShop == "back");
