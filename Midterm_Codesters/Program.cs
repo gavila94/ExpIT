@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -78,7 +78,7 @@ namespace point_of_sale_midterm
 
         static void addToMenu()
         {
-            Console.Write("\nWould you like to add a new item to the menu?\t");
+            Console.Write("\nWould you like to add a new item to the menu? (y/n)\t");
             string menuAdd = Console.ReadLine();
 
             if (menuAdd.ToLower() == "yes" || menuAdd.ToLower() == "y")
@@ -86,7 +86,7 @@ namespace point_of_sale_midterm
                 Console.Write("\nEnter item name:\t");
                 string itemName = Console.ReadLine();
 
-                Console.Write("\nEnter item category(foods, drinks, sweets):\t");
+                Console.Write("\nEnter item category (foods, drinks, sweets):\t");
                 string itemCategory = Console.ReadLine();
 
                 Console.Write("\nEnter item description:\t");
@@ -230,7 +230,6 @@ namespace point_of_sale_midterm
 
             List<cartItem> userCart = new List<cartItem>();
 
-            //line count
             var lineCount = 0;
             using (var reader = File.OpenText(@"C:\Users\Mo\Desktop\Codester Group Project\point_of_sale_midterm\menu.txt"))
             {
@@ -251,7 +250,6 @@ namespace point_of_sale_midterm
                         Console.Write("\nInput was not correct, please enter 1-12\n");
                 } while (userInput < 1 || userInput > lineCount);
 
-
                 do
                 {
                     Console.Write("\nPlease enter a quantity:\t");
@@ -263,14 +261,14 @@ namespace point_of_sale_midterm
                 userItems.Add(userInput);
                 quantites.Add(quantity);
 
-                Console.Write("You've ordered: ");
+                Console.Write("\nYou've ordered: ");
                 
                 for(int i = 0; i < userItems.Count; i++)
                 {
-                    Console.Write("\n" + quantites.ElementAt(i).ToString() + " of item " + userItems.ElementAt(i).ToString());
+                    Console.Write("\n" + quantites.ElementAt(i).ToString() + " of item #" + userItems.ElementAt(i).ToString());
                 }
 
-                Console.Write("\nWould you like to add another item?(y/n):\t");
+                Console.Write("\n\nWould you like to add another item?(y/n):\t");
                 addMore = Console.ReadLine();
 
                 if (addMore.ToLower() == "y" || addMore.ToLower() == "yes")
@@ -317,9 +315,7 @@ namespace point_of_sale_midterm
 
                 userCart.Add(product);
             }
-
             return userCart;
-
         }
 
         static List<cartItem> getInfo(List<cartItem> shoppingList, List<Product> menu)
