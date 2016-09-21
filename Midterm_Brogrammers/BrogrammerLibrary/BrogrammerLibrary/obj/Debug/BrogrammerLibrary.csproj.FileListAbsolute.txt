@@ -1,0 +1,6 @@
+C:\Users\Student\Documents\Visual Studio 2015\Projects\BrogrammerLibrary\BrogrammerLibrary\bin\Debug\BrogrammerLibrary.exe.config
+C:\Users\Student\Documents\Visual Studio 2015\Projects\BrogrammerLibrary\BrogrammerLibrary\bin\Debug\BrogrammerLibrary.exe
+C:\Users\Student\Documents\Visual Studio 2015\Projects\BrogrammerLibrary\BrogrammerLibrary\bin\Debug\BrogrammerLibrary.pdb
+C:\Users\Student\Documents\Visual Studio 2015\Projects\BrogrammerLibrary\BrogrammerLibrary\obj\Debug\BrogrammerLibrary.exe
+C:\Users\Student\Documents\Visual Studio 2015\Projects\BrogrammerLibrary\BrogrammerLibrary\obj\Debug\BrogrammerLibrary.pdb
+C:\Users\Student\Documents\Visual Studio 2015\Projects\BrogrammerLibrary\BrogrammerLibrary\obj\Debug\BrogrammerLibrary.csprojResolveAssemblyReference.cache

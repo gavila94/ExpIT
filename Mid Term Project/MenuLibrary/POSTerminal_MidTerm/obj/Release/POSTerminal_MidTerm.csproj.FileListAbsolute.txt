@@ -1,0 +1,8 @@
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\POSTerminal_MidTerm\bin\Release\POSTerminal_MidTerm.exe.config
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\POSTerminal_MidTerm\bin\Release\POSTerminal_MidTerm.exe
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\POSTerminal_MidTerm\bin\Release\POSTerminal_MidTerm.pdb
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\POSTerminal_MidTerm\bin\Release\POSTerminal.dll
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\POSTerminal_MidTerm\bin\Release\POSTerminal.pdb
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\POSTerminal_MidTerm\obj\Release\POSTerminal_MidTerm.csprojResolveAssemblyReference.cache
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\POSTerminal_MidTerm\obj\Release\POSTerminal_MidTerm.exe
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\POSTerminal_MidTerm\obj\Release\POSTerminal_MidTerm.pdb

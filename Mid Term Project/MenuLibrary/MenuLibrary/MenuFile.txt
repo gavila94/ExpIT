@@ -1,0 +1,12 @@
+﻿a,Hamburger,Burger,2.99
+b,Cheeseburger,Burger,3.99
+c,Cheese Fries,Fries,3.49
+d,Cajun Fries,Fries,3.69
+e,Soda    ,Beverage,1.99
+f,Milkshake,Beverage,3.99
+g,Cheese dog,Hotdog,1.99
+h,Bacon dog,Hotdog,1.99
+i,Veg Sandwich,Sandwich,4.99
+j,BLT       ,Sandwich,4.49
+k,Cheese Pizza,Pizza,4.99
+l,Pep Pizza,Pizza,5.99

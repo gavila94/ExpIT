@@ -1,0 +1,12 @@
+Bagel;Foods;Toasted with choice of cream cheese or butter;1.50;
+Fruit;Foods;Fresh from the Farmer's Market;2.00;
+Breakfast Sandwich;Foods;Vegetarian options available;2.75;
+Wrap;Foods;Choose from Chicken Caesar or Veggie;5.00;
+Coffee;Drinks;Standard coffee;1.99;
+Iced Coffee;Drinks;Personalize with flavor shots;2.50;
+Smoothie;Drinks;Choose from the fresh fruits;4.00;
+Tea;Drinks;Assorted tea flavors;1.99;
+Latte;Drinks; Carmel, Vanilla, or Pumpkin Spice;2.99;
+Hot Chocolate;Drinks; White or dark chocolate;2.50;
+Donut;Sweets;Variety of options;0.99;
+Coffee Cake;Sweets;Swirled with sweet cinnamon and topped with streusel;3.50;

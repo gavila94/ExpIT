@@ -1,0 +1,7 @@
+c:\users\student\documents\visual studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers\bin\Debug\MidTermProject_Brogrammers.exe.config
+c:\users\student\documents\visual studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers\obj\Debug\MidTermProject_Brogrammers.csprojResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers\bin\Debug\MidTermProject_Brogrammers.exe
+c:\users\student\documents\visual studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers\bin\Debug\MidTermProject_Brogrammers.pdb
+c:\users\student\documents\visual studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers\obj\Debug\MidTermProject_Brogrammers.exe
+c:\users\student\documents\visual studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers\obj\Debug\MidTermProject_Brogrammers.pdb
+c:\users\student\documents\visual studio 2015\Projects\MidTermProject_Brogrammers\MidTermProject_Brogrammers\bin\Debug\Books.txt

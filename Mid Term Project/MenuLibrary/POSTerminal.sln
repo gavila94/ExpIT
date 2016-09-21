@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSTerminal", "MenuLibrary\POSTerminal.csproj", "{F65BECF8-2268-4E2A-97C8-DD2622D98287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSTerminal_MidTerm", "POSTerminal_MidTerm\POSTerminal_MidTerm.csproj", "{B0A5D400-3787-42F4-8266-1BE12872F84E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F65BECF8-2268-4E2A-97C8-DD2622D98287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65BECF8-2268-4E2A-97C8-DD2622D98287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65BECF8-2268-4E2A-97C8-DD2622D98287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65BECF8-2268-4E2A-97C8-DD2622D98287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A5D400-3787-42F4-8266-1BE12872F84E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A5D400-3787-42F4-8266-1BE12872F84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A5D400-3787-42F4-8266-1BE12872F84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A5D400-3787-42F4-8266-1BE12872F84E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

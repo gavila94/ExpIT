@@ -1,0 +1,6 @@
+c:\users\madhusudan\documents\visual studio 2015\Projects\LibraryTerminal\LibraryTerminal\bin\Debug\LibraryTerminal.exe.config
+c:\users\madhusudan\documents\visual studio 2015\Projects\LibraryTerminal\LibraryTerminal\bin\Debug\LibraryTerminal.exe
+c:\users\madhusudan\documents\visual studio 2015\Projects\LibraryTerminal\LibraryTerminal\bin\Debug\LibraryTerminal.pdb
+c:\users\madhusudan\documents\visual studio 2015\Projects\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.exe
+c:\users\madhusudan\documents\visual studio 2015\Projects\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.pdb
+C:\Users\madhusudan\Documents\Visual Studio 2015\Projects\LibraryTerminal\LibraryTerminal\obj\Debug\LibraryTerminal.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\MenuLibrary\bin\Release\POSTerminal.dll
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\MenuLibrary\bin\Release\POSTerminal.pdb
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\MenuLibrary\obj\Release\POSTerminal.dll
+C:\Users\PCUser\Documents\Mid Term Project\MenuLibrary\MenuLibrary\obj\Release\POSTerminal.pdb
