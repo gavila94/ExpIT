@@ -68,7 +68,7 @@ namespace LibraryTerminal
         public void displayBooks()
         {
             foreach (Books book in Admin.listOfBooks.OrderBy(m => m.title))
-                Console.WriteLine( book.BookNumber + "\t Book Title:" + book.title);
+                Console.WriteLine( book.BookNumber + "  Title:" + book.title + " \t" + book.availability);
         }
         public void displayCategories()
         {

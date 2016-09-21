@@ -30,14 +30,19 @@ namespace LibraryTerminal
             int accountNumber = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Welcome " + name + " user # " + accountNumber);
+            Console.WriteLine();
             selection:
             Console.WriteLine("What would you like to do? (1) List All Books (2) Search (3) Return a Book");
             int choice = int.Parse(Console.ReadLine());
+            Console.WriteLine();
             start:
             if (choice == 1)
             {
+                Console.WriteLine("=======================================");
                 library.displayBooks();
-                Console.WriteLine("Please enter a book number to add to the cart");
+                Console.WriteLine("=======================================");
+                Console.WriteLine();
+                Console.Write("Please enter a book number to add to the cart:\t");
                 string selectedBook = Console.ReadLine();
 
                 library.takeBook(selectedBook);
@@ -52,7 +57,9 @@ namespace LibraryTerminal
                 Responce = Console.ReadLine();
                 if (Responce == "y")
                 {
+                    Console.WriteLine("***************************************");
                     library.displayCheckout(name, accountNumber);
+                    Console.WriteLine("***************************************");
                 }
                 else Console.WriteLine("Thank You.");
             }
@@ -184,9 +191,9 @@ namespace LibraryTerminal
                         }
                         else
                         {
-                            Console.WriteLine("=======================================");
+                            Console.WriteLine("***************************************");
                             library.displayCheckout(name, accountNumber);
-                            Console.WriteLine("=======================================");
+                            Console.WriteLine("***************************************");
                         }
 
                         break;
