@@ -1,0 +1,13 @@
+<days>
+  <block name="" ></block>
+<workday>Monday is the start of the week
+   <iteneray> 
+       <hr time="9:00"> got to work</hr>
+	   <hr time="10:15"> stop by coffee shop</hr>
+   </iteneray>
+  <iteneray></iteneray>
+</workday>
+<workday>Tuesday is trash day</workday>
+<workday>More work</workday>
+<workday>more work</workday>
+</days>
